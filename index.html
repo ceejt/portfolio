@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equib="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ecd157b85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id ="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+            <li><a href="#header"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#services"> Services</a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#contact"> Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class ="header-text">
+            <p>Frontend Developer</p>
+            <h1> Hello there! I'm <span>CJ Tinae</span></h1>
+        </div>
+    </div>
+</div>    
+    <div id="about"></div> <!-- About Section --> 
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="img-fade-wrapper">
+                    <img src="images/user.png" alt="User Image">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a Computer Science student with a passion for design, digital content, and creative problem-solving. With hands-on experience in student publications, tech organizations, and academic projects, I’ve developed skills in graphic design, writing, and front-end development. I’m detail-oriented, a fast learner, and highly adaptable, whether I’m editing content, designing visuals, or learning new tools. I enjoy taking on meaningful work, collaborating with teams, and growing through real-world experiences.     
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2024 – Present</span><br>Creatives Committee Member | UP Computer Science Guild - TekToks</li>
+                            <li><span>September 2024 – Present</span><br>Sports Writer | Tug-ani Student Publication</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Expected July 2028</span><br>BS Computer Science | University of the Philippines<br>Relevant Coursework: Fundamentals of Programming, Discrete Mathematics</li>
+                            <li><span>May 2024</span><br>STEM Strand, Senior High School | Ateneo de Zamboanga University<br>With High Honors | Top 20 Magis Awardee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "services"> <!--Services-->
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I’ve developed skills in graphic design, writing, and front-end development. I’m detail-oriented, a fast learner, and highly adaptable, whether I’m editing content, designing visuals, or learning new tools.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-group"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I’ve developed skills in graphic design, writing, and front-end development. I’m detail-oriented, a fast learner, and highly adaptable, whether I’m editing content, designing visuals, or learning new tools.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I’ve developed skills in graphic design, writing, and front-end development. I’m detail-oriented, a fast learner, and highly adaptable, whether I’m editing content, designing visuals, or learning new tools.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects"> <!--Projects-->
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project-1.png">
+                    <div class="layer">
+                        <h3>Budgetwise</h3>
+                        <p>A financial management app built using C++ as part of the programming course. It is a student-centered budget tracking platform.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.png">
+                    <div class="layer">
+                        <h3>Personal Budget Tracker</h3>
+                        <p>Designed and maintained a real-time expense tracker on Google Sheets. Automated entries and categorized spending using formulas and data validation</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact"> <!--contact--> 
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tinaecyriljosef@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>+639171937051</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/cyriljosef.tinae/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/cyriljosef/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/cj-tinae/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cyril Josef Tinae CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        } 
+       
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwXEdpapELCx-8bObVn4vQulx-7CdE2aDUL807XdKL3p3DFTrJUcuMIcFYd-oAL4Hv_lw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
